@@ -7,3 +7,16 @@ body{
     height: 100%;
 
 }
+
+#ui{
+    background-color: rgb(211, 71, 16);
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+#ui label,h1{
+    color: #fff;
+
+}
