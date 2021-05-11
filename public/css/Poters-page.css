@@ -1,3 +1,12 @@
+body{
+  background-image: url("doctor.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+ }
+
 .u-section-1 .u-sheet-1 {
   min-height: 506px;
 }
