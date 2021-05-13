@@ -14,6 +14,11 @@
     <title>CrowdFunding Website</title>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        Hello world!
+      </div>
+    </header>
       
 
 @yield('content')
