@@ -1,0 +1,72 @@
+.img1 {
+    float: left;
+    max-width: 600px;
+    max-height: 500px;
+}
+
+.img2 {
+    float: right;
+    max-width: 600px;
+    max-height: 500px;
+}
+
+
+
+body {
+    background-image: url("images/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*.container {*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    max-width: 400px;*/
+/*}*/
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #00b0ff;
+    color: black;
+    font-size: 16px;
+    padding: 20px 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.container .btn1:hover {
+    background-color:   #7CFC00;
+}
+
+/*button 2 cam*/
+.container .btn2 {
+    position: ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #00b0ff;
+    color: black;
+    font-size: 16px;
+    padding: 20px 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.container .btn2:hover {
+    background-color:   #7CFC00;
+}
