@@ -17,11 +17,12 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->string('first-name');
             $table->string('last-name');
-
+            $table->string('category');
+            $table->integer('phone number');
             $table->string('address');
             $table->string('email');
-
-            
+            $table->integer('amount');
+            $table->date('required date');
             $table->timestamps();
         });
     }

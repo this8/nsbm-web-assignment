@@ -33,6 +33,9 @@
           <link rel="stylesheet" href={{ asset('css/template.css') }} media="screen">
           <link rel="stylesheet" href={{ asset('css/Poster_css.css') }} media="screen">
           <link rel="stylesheet" href={{ asset('css/Poster-page.css') }} media="screen">
+          <link rel="stylesheet" href={{ asset('css/creatingpost.css') }}>
+
+          
     <title>Web Assignment</title>
   </head>
   <body>

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CrudpostController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +19,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('/create', function () {
+//     return view('post.creatingpostform');
+// });
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::view('/posters-page', 'posters-page');
+Route::view('/posters-page', 'posters-page');//what is this...
+
+Route::resource('/posts',CrudpostController::class);
 
 require __DIR__.'/auth.php';
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
