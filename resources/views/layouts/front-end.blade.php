@@ -31,9 +31,9 @@
          <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
           <link rel="stylesheet" href={{ asset('css/template.css') }} media="screen">
-          <link rel="stylesheet" href={{ asset('css/Poster_css.css') }} media="screen">
+          {{-- <link rel="stylesheet" href={{ asset('css/Poster_css.css') }} media="screen">
           <link rel="stylesheet" href={{ asset('css/Poster-page.css') }} media="screen">
-          <link rel="stylesheet" href={{ asset('css/creatingpost.css') }}>
+          <link rel="stylesheet" href={{ asset('css/creatingpost.css') }}> --}}
 
           
     <title>Web Assignment</title>
