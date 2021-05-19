@@ -6,10 +6,8 @@
 
 .ui {
     position: relative;
-    background: rgb(248, 242, 188);
     background: linear-gradient(to right, rgb(248, 242, 188), #eb7e18);
     border-radius: 25px;
-    /* height: 300px; */
     width: 450px;
     padding: 25px;
     padding: 50px;
@@ -17,7 +15,7 @@
 }
 
 .ui header {
-    color: rgb(19, 214, 248);
+    color: rgb(12, 61, 153);
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -29,4 +27,20 @@
     padding: 10px;
     padding-left: 50px;
     border: none;
+}
+
+.ui .btn {
+    background: linear-gradient(45deg, #33f0f0, #042f70);
+    color: #fff;
+    width: 230px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+}
+
+.ui .btn:hover {
+    background: linear-gradient(45deg, #e0dd0d, #63db13);
 }
