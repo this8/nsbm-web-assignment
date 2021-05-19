@@ -9,10 +9,10 @@
 
                     {{-- <div class="col-md-12"> --}}
 
-                        <div class="ui" style="margin-top: 300px">
+                        <div class="ui shadow-lg p-3" style="margin-top: 300px">
                 
                              
-                            <form  method="POST" action="{{ route('login') }}">
+                            <form   method="POST" action="{{ route('login') }}">
                                 @csrf
 
                                 <header>Log In Account</header>
