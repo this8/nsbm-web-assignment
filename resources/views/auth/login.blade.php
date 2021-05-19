@@ -47,9 +47,7 @@
                                         </a>
                                     @endif
                     
-                                    <x-button class="ml-3">
-                                        {{ __('Log in') }}
-                                    </x-button>
+                                    <input type="submit" class="btn" value="CREATE ACCOUNT">
                                 </div>
                             </form>
                 
