@@ -1,17 +1,41 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+@extends('layouts.front-end')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    You're logged in!
+@section('content')
+<h1>Posts</h1>
+
+{{-- @if(count($posts)>0)
+    @foreach ($posts as $post)
+        <div class="jumbotron">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-4">
+                    <img width="100%" src="Storage/App/public/cover_images/{{$post->cover_image}}">
                 </div>
+                <div class="col-md-8 col-sm-8">
+                    <h3> <a href="/posts/{{$post->id}}">{{$post->title}}</a> </h3>
+                    <small>Written on {{$post->created_at}} by {{$post->user->name}} </small>
+                </div>
+                
             </div>
+            
         </div>
+    @endforeach
+{{$posts->links('pagination::bootstrap-4')}}
+@else
+    <p> No posts found </p>
+@endif --}}
+<div class="jumbotron">
+    <div class="row">
+
+        <div class="col-md-4 col-sm-4">
+            <img width="100%" src="">
+        </div>
+        <div class="col-md-8 col-sm-8">
+            <h3> <a href="">Title</a> </h3>
+            <small>Written on 20.01.15 by Nimal </small>
+        </div>
+        
     </div>
-</x-app-layout>
+    
+</div>
+@endsection
