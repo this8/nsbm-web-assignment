@@ -7,33 +7,34 @@
                 <div class="loginCard">
 
 
-                    <div class="col-md-12">
+                    {{-- <div class="col-md-12"> --}}
 
-                        <div id="ui" style="margin-top: 300px">
+                        <div class="ui" style="margin-top: 300px">
                 
                              
                             <form  method="POST" action="{{ route('login') }}">
                                 @csrf
+
+                                <header>Log In Account</header>
                     
                                 <!-- Email Address -->
                                 <div>
-                                    <x-label for="email" :value="__('Email')" />
                     
-                                    <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+                                    <x-input  class="myInput shadow-lg p-3 mb" type="email" name="email" :value="old('email')" placeholder="Email" required/>
                                 </div>
                     
                                 <!-- Password -->
-                                <div class="mt-4">
-                                    <x-label for="password" :value="__('Password')" />
+                                {{-- <div class="mt-4"> --}}
+                                    <br><br>
                     
-                                    <x-input id="password" class="block mt-1 w-full"
+                                    <x-input placeholder="Password" id="password" class="myInput shadow-lg p-3 mb"
                                                     type="password"
                                                     name="password"
                                                     required autocomplete="current-password" />
-                                </div>
+                                {{-- </div> --}}
                     
                                 <!-- Remember Me -->
-                                <div class="block mt-4">
+                                <div class=" mt-4">
                                     <label for="remember_me" class="inline-flex items-center">
                                         <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
                                         <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
@@ -54,7 +55,7 @@
                            
                         </div>
 
-                    </div>
+                    {{-- </div> --}}
                    
                 </div>
 

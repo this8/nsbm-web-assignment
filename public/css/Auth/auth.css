@@ -4,12 +4,27 @@
     box-sizing: border-box;
 }
 
-#ui {
+.ui {
     position: relative;
-    background-color: rgb(211, 71, 16);
+    background-color: rgb(248, 242, 188);
     border-radius: 25px;
     /* height: 300px; */
-    width: 350px;
+    width: 450px;
     padding: 25px;
     padding: 50px;
+}
+
+.ui header {
+    color: rgb(19, 214, 248);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.ui .myInput {
+    width: 360px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 50px;
+    border: none;
 }
