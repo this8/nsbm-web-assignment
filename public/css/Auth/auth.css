@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#ui {
+    position: relative;
+    background-color: rgb(211, 71, 16);
+    border-radius: 25px;
+    /* height: 300px; */
+    width: 350px;
+    padding: 25px;
+    padding: 50px;
+}

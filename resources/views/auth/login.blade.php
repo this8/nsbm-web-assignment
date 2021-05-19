@@ -9,10 +9,10 @@
 
                     <div class="col-md-12">
 
-                        <div class="formStyle">
+                        <div id="ui" style="margin-top: 300px">
                 
                              
-                            <form style="margin-top: 300px" method="POST" action="{{ route('login') }}">
+                            <form  method="POST" action="{{ route('login') }}">
                                 @csrf
                     
                                 <!-- Email Address -->

@@ -30,10 +30,8 @@
   <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-371a"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
          <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-          <link rel="stylesheet" href={{ asset('css/auth-template.css') }} media="screen">
-          <link rel="stylesheet" href={{ asset('css/Poster_css.css') }} media="screen">
-          <link rel="stylesheet" href={{ asset('css/Poster-page.css') }} media="screen">
-          {{-- <link rel="stylesheet" href={{ asset('css/creatingpost.css') }}> --}}
+          <link rel="stylesheet" href={{ asset('css/Auth/auth-template.css') }} media="screen">
+          <link rel="stylesheet" href={{ asset('css/Auth/auth.css') }} media="screen">
 
           
     <title>Web Assignment</title>
