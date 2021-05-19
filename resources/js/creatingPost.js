@@ -1,46 +1,47 @@
-function validate(){
-    // name alert
-    if(document.fmCreatingPost.fname.value.length==0){
-        window.alert("Please fill the your first name");
-    }
-    if(document.fmCreatingPost.lname.value.length==0){
-        window.alert("Please fill the your last name");
+function valid() {
+    if (form.category.value==Category) {
+      alert("category shoud not be null");
+      form.category.focus();
+      return false;
     }
 
-    var a = -1;
-    a = document.fmCreatingPost.email.value.indexOf("@");
-
-
-    // email alert
-    var b = document.fmCreatingPost.email.value.lastIndexOf(".");
-    if (a == -1) {
-        window.alert("Invalid email address. \nEmail address must have '@' sign.");
+    if (form.fname.value=="") {
+      alert("First Name shoud not be null");
+      form.fname.focus();
+      return false;
     }
 
-    if (a < 1 || b - a < 2 || b + 2 >= document.fmCreatingPost.value.length) {
-        window.alert("Invalid Email addresss");
+    if (form.lname.value=="") {
+      alert("Last Name shoud not be null");
+      form.lname.focus();
+      return false;
     }
 
-    //phone number alert
-    if(document.fmCreatingPost.PhoneNumber.value.length==0){
-        window.alert("Please enter the Phone number");
-    }
-    if (isNaN(document.fmCreatingPost.PhoneNumber.value)) {
-        window.alert("Please don't enter the letters..");
+    if ((isNaN(form.fname.value)==false)||(isNaN(form.lname.value)==false)) {
+      alert("Name invalid input");
+      form.fname.focus();
+      return false;
     }
 
-    // address alert
-    if (document.fmCreatingPost.address.value.length < 10) {
-        window.alert("Please enter correct address");
+    if (length(form.PhoneNumber.value)!=10){
+      alert("Name invalid input");
+      form.PhoneNumber.focus();
+      return false;
     }
 
-    //amount alert
-    if(document.fmCreatingPost.rqAmount.value.length<4){
-            window.alert("Please fill the required amount number");
-        }
+    if (form.amount.value==""){
+      alert("Donation amount cannot be null");
+      form.amount.focus();
+      return false;
+    }
 
-    //date alert    
-    if(document.fmCreatingPost.date.value.length==0){
-           window.alert("Please fill the required date");
-       }
-}
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(form.email.value))
+    {
+      return (true)
+    }
+    else {
+        alert("You have entered an invalid email address!");
+        return (false);
+    }
+
+  }

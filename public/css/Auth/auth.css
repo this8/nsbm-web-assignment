@@ -6,12 +6,12 @@
 
 .ui {
     position: relative;
-    background: linear-gradient(to right, rgb(248, 242, 188), #eb7e18);
+    background: linear-gradient(to left, rgb(248, 242, 188), #eb7e18);
     border-radius: 25px;
     width: 450px;
     padding: 25px;
     padding: 50px;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .ui header {

@@ -16,13 +16,12 @@
       <div class="col-lg-6">
         <div id="ui">
           <form class="form-group text-center">
-
             <h1 class="text-center">Creating Post</h1>
             <div class="row">
               <div class="col-lg-12">
                 <label> Category </label>
-                <select class="form-control">
-                  <option>Category...</option>
+                <select name="category" class="form-control" required>
+                  <option>Category</option>
                   <option>Heart</option>
                   <option>Cancer</option>
                   <option>Vision Problem</option>
@@ -35,7 +34,7 @@
               <div class="col-lg-6">
                 <br>
                 <label>Patient First Name</label>
-                <input type="text" name="fname" class="form-control" placeholder="Enter your first name">
+                <input type="text" name="fname" class="form-control" placeholder="Enter your first name" required>
               </div>
 
               <div class="col-lg-6">
@@ -47,37 +46,38 @@
               <div class="col-lg-12">
                 <br>
                 <label>Phone number</label>
-                <input type="text" name="PhoneNumber" class="form-control" placeholder="Enter your phone number..">
+                <input type="text" name="PhoneNumber" class="form-control" placeholder="Enter your phone number.." required>
 
                 <br>
               </div>
 
               <div class="col-lg-12">
                 <label>Address</label>
-                <textarea class="form-control" cols="30" rows="4"></textarea>
+                <textarea class="form-control" cols="30" rows="4" required></textarea>
                 <br>
               </div>
 
               <div class="col-lg-12">
 
                 <label>E-mail</label>
-                <input type="email" name="email" class="form-control" placeholder="Enter your email..">
+                <input type="email" name="email" class="form-control" placeholder="Enter your email.." required>
 
                 <br>
               </div>
 
               <div class="col-lg-6">
                 <label>Donation Amount</label>
-                <input type="text" name="amount" value="RS " class="form-control" placeholder="Enter donation amount..">
+                <input type="text" name="amount" value="RS " class="form-control" placeholder="Enter donation amount.." required>
 
                 <br>
               </div>
 
               <div class="col-lg-6">
                 <label>Required date</label>
-                <input type="date" name="date" class="form-control" placeholder="Enter required date..">
+                <input type="date" name="date" class="form-control" placeholder="Enter required date.." required>
                 <br>
               </div>
+
 
 
               <div class="inputUpload">
